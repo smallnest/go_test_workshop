@@ -14,6 +14,7 @@ Go Test Workshop
     - Log/Logf/Error/Errorf
     - Skip/SkipNow/Skipf/Skipped
     - Helper
+    - Parallel
 
 
 - s3: go test command
@@ -55,35 +56,38 @@ Go Test Workshop
   - go-cover-treemap -coverprofile cover.out > out.svg
   - https://github.com/microsoft/vscode-go/issues/816
   - https://golang.org/doc/go1.10#test
-  - go tool cover -html=cover.out -o cover.tml
-  - go tool cover -o coverage.html -html=coverage.out; sed -i 's/black/whitesmoke/g' coverage.html; sensible-browser coverage.html
-  - mac: go tool cover -o coverage.html -html=coverage.out; sed -i'*.bak' 's/black/whitesmoke/g' coverage.html; open coverage.html
+  - go tool cover -html=cover.out -o cover.html
+  - go tool cover -o cover2.html -html=cover.out; sed -i 's/black/whitesmoke/g' cover2.html; open cover2.html
+  - mac: go tool cover -o cover2.html -html=cover.out; sed -i'*.bak' 's/black/whitesmoke/g' cover2.html; rm -fr cover2.html*.bak;open cover2.html
 
 
-- s4: tools
-- assert/require
-- gocovery
+- s5: tools
+  - assert/require
+  - gocovery: Behavior-driven Development
 
-- s5: mock
+- s6: mock
   - https://github.com/golang/mock
   - https://github.com/vektra/mockery
   - https://github.com/DATA-DOG/go-sqlmock
   - https://github.com/h2non/gock
   - https://github.com/gavv/httpexpect
 
-  - monky
+  - monkey
     - https://github.com/bouk/monkey
     - https://github.com/agiledragon/gomonkey
+      - printf '\x07' | dd of=api.test bs=1 seek=160 count=1 conv=notrunc
+      - https://github.com/eisenxp/macos-golink-wrapper
 
-- s6: web case
+- s7: web case
  - dao
  - service
  - http
 
-- s7: benchmark
+- s8: benchmark
 
-- s8: example
+- s9: example
 
+- s10: fuzzing test
 
 
 

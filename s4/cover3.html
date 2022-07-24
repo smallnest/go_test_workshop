@@ -1,0 +1,221 @@
+
+<html>
+    <head>
+        <title>Coverage Report</title>
+        <meta charset="utf-8">
+        
+        <style type="text/css">
+            body {
+                background-color: #fff;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            table {
+                margin-left: 10px;
+                border-collapse: collapse;
+            }
+            td { 
+                background-color: #fff; 
+                padding: 2px;
+            }
+            table.overview td {
+                padding-right: 20px;
+            }
+            td.percent, td.linecount { text-align: right; }
+            div.package, #totalcov { 
+                color: #fff;
+                background-color: #375eab; 
+                font-size: 16px;
+                font-weight: bold;
+                padding: 10px;
+                border-radius: 5px 5px 5px 5px;
+            }
+            div.package, #totalcov { 
+                float: right; 
+                right: 10px;
+            }
+            #totalcov { 
+                top: 10px;
+                position: relative;
+                background-color: #fff;
+                color: #000;
+                border: 1px solid #375eab;
+                clear: both;
+            }
+            #summaryWrapper {
+                position: fixed;
+                top: 10px;
+                float: right;
+                right: 10px;
+
+            }
+            span.packageTotal {
+                float: right;
+                color: #000;
+            }
+            #doctitle { 
+                background-color: #fff; 
+                font-size: 24px;
+                margin-top: 20px;
+                margin-left: 10px;
+                color: #375eab;
+                font-weight: bold;
+            }
+            #about {
+                margin-left: 18px;
+                font-size: 10px;
+            }
+            table tr:last-child td {
+                font-weight: bold;
+            }
+            .functitle, .funcname { 
+                text-align: center; 
+                font-size: 20px; 
+                font-weight: bold; 
+                color: #375eab; 
+            }
+            .funcname {
+                text-align: left;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-bottom: 20px;
+                padding: 2px 5px 5px;
+                background-color: #e0ebf5;
+            }
+            table.listing {
+                margin-left: 10px;
+            }
+            table.listing td {
+                padding: 0px;
+                font-size: 12px;
+                background-color: #eee; 
+                vertical-align: top;
+                padding-left: 10px;
+                border-bottom: 1px solid #fff;
+            }
+            table.listing td:first-child {
+                text-align: right;
+                font-weight: bold;
+                vertical-align: center;
+            }
+            table.listing tr.miss td {
+                background-color: #FFBBB8;
+            }
+            table.listing tr:last-child td {
+                font-weight: normal;
+                color: #000;
+            }
+            table.listing tr:last-child td:first-child {
+                font-weight: bold;
+            }
+            .info {
+                margin-left: 10px;
+            }
+            .info code {
+            }
+            pre { margin: 1px; }
+            pre.cmd { 
+                background-color: #e9e9e9;
+                border-radius: 5px 5px 5px 5px;
+                padding: 10px;
+                margin: 20px;
+                line-height: 18px;
+                font-size: 14px;
+            }
+            a { 
+                text-decoration: none; 
+                color: #375eab;
+            }
+            a:hover { text-decoration: underline; }
+            p { margin-left: 10px; }
+        </style>
+        
+    </head>
+    <body>
+        <div id="doctitle">Coverage Report</div>
+    <div id="about">Generated on 24 Jul 22 19:38 +0800 with <a href="https://github.com/matm/gocov-html">gocov-html</a></div><div class="funcname">Report Overview</div><table class="overview">
+<tr id="s_pkg_github.com/smallnest/go_test_workshop/s1"><td><code><a href="#pkg_github.com/smallnest/go_test_workshop/s1">github.com/smallnest/go_test_workshop/s1</a></code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>5/5</code></td></tr>
+<tr id="s_pkg_github.com/smallnest/go_test_workshop/s6/book/api"><td><code><a href="#pkg_github.com/smallnest/go_test_workshop/s6/book/api">github.com/smallnest/go_test_workshop/s6/book/api</a></code></td><td class="percent"><code>75.00%</code></td><td class="linecount"><code>12/16</code></td></tr>
+<tr id="s_pkg_github.com/smallnest/go_test_workshop/s6/book/dao"><td><code><a href="#pkg_github.com/smallnest/go_test_workshop/s6/book/dao">github.com/smallnest/go_test_workshop/s6/book/dao</a></code></td><td class="percent"><code>66.67%</code></td><td class="linecount"><code>6/9</code></td></tr>
+<tr id="s_pkg_github.com/smallnest/go_test_workshop/s6/book/service"><td><code><a href="#pkg_github.com/smallnest/go_test_workshop/s6/book/service">github.com/smallnest/go_test_workshop/s6/book/service</a></code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>2/2</code></td></tr>
+<tr><td><code>Report Total</code></td><td class="percent"><code>78.12%</code></td><td class="linecount"><code>25/32</code></td></tr>
+</table>
+<div id="pkg_github.com/smallnest/go_test_workshop/s1" class="funcname">Package Overview: github.com/smallnest/go_test_workshop/s1 <span class="packageTotal">100.00%</span></div><p>This is a coverage report created after analysis of the <code>github.com/smallnest/go_test_workshop/s1</code> package. It 
+        has been generated with the following command:</p><pre class="cmd">gocov test github.com/smallnest/go_test_workshop/s1 | gocov-html</pre>        <p>Here are the stats. Please select a function name to view its implementation and see what's left for testing.</p><table class="overview">
+<tr id="s_fn_Add"><td><code><a href="#fn_Add">Add(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s1/arith.go</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>1/1</code></td></tr>
+<tr id="s_fn_Sub"><td><code><a href="#fn_Sub">Sub(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s1/arith.go</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>1/1</code></td></tr>
+<tr id="s_fn_Mul"><td><code><a href="#fn_Mul">Mul(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s1/arith.go</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>1/1</code></td></tr>
+<tr id="s_fn_Div"><td><code><a href="#fn_Div">Div(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s1/arith.go</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>1/1</code></td></tr>
+<tr id="s_fn_greet"><td><code><a href="#fn_greet">greet(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s1/hello.go</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>1/1</code></td></tr>
+<tr><td colspan="2"><code>github.com/smallnest/go_test_workshop/s1</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>5/5</code></td></tr>
+</table>
+
+<div class="funcname" id="fn_Add">func Add</div><div class="info"><a href="#s_fn_Add">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s1/arith.go</code>:</p></div><table class="listing">
+<tr><td>3</td><td><code><pre>func Add(a, b int) int {</pre></code></td></tr><tr><td>4</td><td><code><pre>        return a + b</pre></code></td></tr><tr><td>5</td><td><code><pre>}</pre></code></td></tr></table>
+
+<div class="funcname" id="fn_Sub">func Sub</div><div class="info"><a href="#s_fn_Sub">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s1/arith.go</code>:</p></div><table class="listing">
+<tr><td>7</td><td><code><pre>func Sub(a, b int) int {</pre></code></td></tr><tr><td>8</td><td><code><pre>        return a - b</pre></code></td></tr><tr><td>9</td><td><code><pre>}</pre></code></td></tr></table>
+
+<div class="funcname" id="fn_Mul">func Mul</div><div class="info"><a href="#s_fn_Mul">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s1/arith.go</code>:</p></div><table class="listing">
+<tr><td>11</td><td><code><pre>func Mul(a, b int) int {</pre></code></td></tr><tr><td>12</td><td><code><pre>        return a * b</pre></code></td></tr><tr><td>13</td><td><code><pre>}</pre></code></td></tr></table>
+
+<div class="funcname" id="fn_Div">func Div</div><div class="info"><a href="#s_fn_Div">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s1/arith.go</code>:</p></div><table class="listing">
+<tr><td>15</td><td><code><pre>func Div(a, b int) int {</pre></code></td></tr><tr><td>16</td><td><code><pre>        return a / b</pre></code></td></tr><tr><td>17</td><td><code><pre>}</pre></code></td></tr></table>
+
+<div class="funcname" id="fn_greet">func greet</div><div class="info"><a href="#s_fn_greet">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s1/hello.go</code>:</p></div><table class="listing">
+<tr><td>3</td><td><code><pre>func greet(s string) string {</pre></code></td></tr><tr><td>4</td><td><code><pre>        return &#34;hello &#34; + s</pre></code></td></tr><tr><td>5</td><td><code><pre>}</pre></code></td></tr></table>
+
+<!-- Can be parsed by external script
+PACKAGE:github.com/smallnest/go_test_workshop/s1 DONE:100.00
+-->
+
+<div id="pkg_github.com/smallnest/go_test_workshop/s6/book/api" class="funcname">Package Overview: github.com/smallnest/go_test_workshop/s6/book/api <span class="packageTotal">75.00%</span></div><p>This is a coverage report created after analysis of the <code>github.com/smallnest/go_test_workshop/s6/book/api</code> package. It 
+        has been generated with the following command:</p><pre class="cmd">gocov test github.com/smallnest/go_test_workshop/s6/book/api | gocov-html</pre>        <p>Here are the stats. Please select a function name to view its implementation and see what's left for testing.</p><table class="overview">
+<tr id="s_fn_BookController.CreateBook"><td><code><a href="#fn_BookController.CreateBook">BookController.CreateBook(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s6/book/api/book.go</code></td><td class="percent"><code>75.00%</code></td><td class="linecount"><code>12/16</code></td></tr>
+<tr><td colspan="2"><code>github.com/smallnest/go_test_workshop/s6/book/api</code></td><td class="percent"><code>75.00%</code></td><td class="linecount"><code>12/16</code></td></tr>
+</table>
+
+<div class="funcname" id="fn_BookController.CreateBook">func BookController.CreateBook</div><div class="info"><a href="#s_fn_BookController.CreateBook">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s6/book/api/book.go</code>:</p></div><table class="listing">
+<tr><td>17</td><td><code><pre>func (bc *BookController) CreateBook(w http.ResponseWriter, r *http.Request) {</pre></code></td></tr><tr><td>18</td><td><code><pre>        title := r.FormValue(&#34;title&#34;)</pre></code></td></tr><tr><td>19</td><td><code><pre>        autherID := r.FormValue(&#34;autherID&#34;)</pre></code></td></tr><tr><td>20</td><td><code><pre>        isbn := r.FormValue(&#34;isbn&#34;)</pre></code></td></tr><tr><td>21</td><td><code><pre>        computers := r.FormValue(&#34;subject&#34;)</pre></code></td></tr><tr><td>22</td><td><code><pre></pre></code></td></tr><tr><td>23</td><td><code><pre>        aid, err := strconv.Atoi(autherID)</pre></code></td></tr><tr><td>24</td><td><code><pre>        if err != nil {</pre></code></td></tr><tr class="miss"><td>25</td><td><code><pre>                http.Error(w, &#34;wrong auther id&#34;, http.StatusBadRequest)</pre></code></td></tr><tr class="miss"><td>26</td><td><code><pre>                return</pre></code></td></tr><tr><td>27</td><td><code><pre>        }</pre></code></td></tr><tr><td>28</td><td><code><pre></pre></code></td></tr><tr><td>29</td><td><code><pre>        book := &amp;model.Book{</pre></code></td></tr><tr><td>30</td><td><code><pre>                Title:    title,</pre></code></td></tr><tr><td>31</td><td><code><pre>                AuthorID: aid,</pre></code></td></tr><tr><td>32</td><td><code><pre>                ISBN:     isbn,</pre></code></td></tr><tr><td>33</td><td><code><pre>                Subject:  computers,</pre></code></td></tr><tr><td>34</td><td><code><pre>        }</pre></code></td></tr><tr><td>35</td><td><code><pre></pre></code></td></tr><tr><td>36</td><td><code><pre>        err = bc.bookService.CreateBook(context.TODO(), book)</pre></code></td></tr><tr><td>37</td><td><code><pre>        if err != nil {</pre></code></td></tr><tr class="miss"><td>38</td><td><code><pre>                http.Error(w, &#34;failed to create book&#34;, http.StatusInternalServerError)</pre></code></td></tr><tr class="miss"><td>39</td><td><code><pre>                return</pre></code></td></tr><tr><td>40</td><td><code><pre>        }</pre></code></td></tr><tr><td>41</td><td><code><pre></pre></code></td></tr><tr><td>42</td><td><code><pre>        data, _ := json.Marshal(book)</pre></code></td></tr><tr><td>43</td><td><code><pre></pre></code></td></tr><tr><td>44</td><td><code><pre>        w.Header().Set(&#34;Contetx-Type&#34;, &#34;application/json&#34;)</pre></code></td></tr><tr><td>45</td><td><code><pre>        w.Write(data)</pre></code></td></tr><tr><td>46</td><td><code><pre>}</pre></code></td></tr></table>
+
+<!-- Can be parsed by external script
+PACKAGE:github.com/smallnest/go_test_workshop/s6/book/api DONE:75.00
+-->
+
+<div id="pkg_github.com/smallnest/go_test_workshop/s6/book/dao" class="funcname">Package Overview: github.com/smallnest/go_test_workshop/s6/book/dao <span class="packageTotal">66.67%</span></div><p>This is a coverage report created after analysis of the <code>github.com/smallnest/go_test_workshop/s6/book/dao</code> package. It 
+        has been generated with the following command:</p><pre class="cmd">gocov test github.com/smallnest/go_test_workshop/s6/book/dao | gocov-html</pre>        <p>Here are the stats. Please select a function name to view its implementation and see what's left for testing.</p><table class="overview">
+<tr id="s_fn_bookStore.InsertBook"><td><code><a href="#fn_bookStore.InsertBook">bookStore.InsertBook(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s6/book/dao/book.go</code></td><td class="percent"><code>75.00%</code></td><td class="linecount"><code>6/8</code></td></tr>
+<tr id="s_fn_NewBookStore"><td><code><a href="#fn_NewBookStore">NewBookStore(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s6/book/dao/book.go</code></td><td class="percent"><code>0.00%</code></td><td class="linecount"><code>0/1</code></td></tr>
+<tr><td colspan="2"><code>github.com/smallnest/go_test_workshop/s6/book/dao</code></td><td class="percent"><code>66.67%</code></td><td class="linecount"><code>6/9</code></td></tr>
+</table>
+
+<div class="funcname" id="fn_bookStore.InsertBook">func bookStore.InsertBook</div><div class="info"><a href="#s_fn_bookStore.InsertBook">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s6/book/dao/book.go</code>:</p></div><table class="listing">
+<tr><td>25</td><td><code><pre>func (s *bookStore) InsertBook(ctx context.Context, b *model.Book) error {</pre></code></td></tr><tr><td>26</td><td><code><pre>        const stmt = &#34;INSERT INTO books (author_id, title, isbn) VALUES ($1, $2, $3)&#34;</pre></code></td></tr><tr><td>27</td><td><code><pre></pre></code></td></tr><tr><td>28</td><td><code><pre>        result, err := s.db.ExecContext(ctx, stmt, b.AuthorID, b.Title, b.ISBN)</pre></code></td></tr><tr><td>29</td><td><code><pre>        if err != nil {</pre></code></td></tr><tr class="miss"><td>30</td><td><code><pre>                return fmt.Errorf(&#34;could not insert row: %w&#34;, err)</pre></code></td></tr><tr><td>31</td><td><code><pre>        }</pre></code></td></tr><tr><td>32</td><td><code><pre></pre></code></td></tr><tr><td>33</td><td><code><pre>        if _, err := result.RowsAffected(); err != nil {</pre></code></td></tr><tr class="miss"><td>34</td><td><code><pre>                return fmt.Errorf(&#34;could not get affected rows: %w&#34;, err)</pre></code></td></tr><tr><td>35</td><td><code><pre>        }</pre></code></td></tr><tr><td>36</td><td><code><pre></pre></code></td></tr><tr><td>37</td><td><code><pre>        b.ID, _ = result.LastInsertId()</pre></code></td></tr><tr><td>38</td><td><code><pre></pre></code></td></tr><tr><td>39</td><td><code><pre>        return nil</pre></code></td></tr><tr><td>40</td><td><code><pre>}</pre></code></td></tr></table>
+
+<div class="funcname" id="fn_NewBookStore">func NewBookStore</div><div class="info"><a href="#s_fn_NewBookStore">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s6/book/dao/book.go</code>:</p></div><table class="listing">
+<tr><td>15</td><td><code><pre>func NewBookStore(db *sql.DB) *bookStore {</pre></code></td></tr><tr class="miss"><td>16</td><td><code><pre>        return &amp;bookStore{</pre></code></td></tr><tr><td>17</td><td><code><pre>                db: db,</pre></code></td></tr><tr><td>18</td><td><code><pre>        }</pre></code></td></tr><tr><td>19</td><td><code><pre>}</pre></code></td></tr></table>
+
+<!-- Can be parsed by external script
+PACKAGE:github.com/smallnest/go_test_workshop/s6/book/dao DONE:66.67
+-->
+
+<div id="pkg_github.com/smallnest/go_test_workshop/s6/book/service" class="funcname">Package Overview: github.com/smallnest/go_test_workshop/s6/book/service <span class="packageTotal">100.00%</span></div><p>This is a coverage report created after analysis of the <code>github.com/smallnest/go_test_workshop/s6/book/service</code> package. It 
+        has been generated with the following command:</p><pre class="cmd">gocov test github.com/smallnest/go_test_workshop/s6/book/service | gocov-html</pre>        <p>Here are the stats. Please select a function name to view its implementation and see what's left for testing.</p><table class="overview">
+<tr id="s_fn_NewBookService"><td><code><a href="#fn_NewBookService">NewBookService(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s6/book/service/book.go</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>1/1</code></td></tr>
+<tr id="s_fn_bookService.CreateBook"><td><code><a href="#fn_bookService.CreateBook">bookService.CreateBook(...)</a></code></td><td><code>github.com/smallnest/go_test_workshop/s6/book/service/book.go</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>1/1</code></td></tr>
+<tr><td colspan="2"><code>github.com/smallnest/go_test_workshop/s6/book/service</code></td><td class="percent"><code>100.00%</code></td><td class="linecount"><code>2/2</code></td></tr>
+</table>
+
+<div class="funcname" id="fn_NewBookService">func NewBookService</div><div class="info"><a href="#s_fn_NewBookService">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s6/book/service/book.go</code>:</p></div><table class="listing">
+<tr><td>15</td><td><code><pre>func NewBookService(db *sql.DB) *bookService {</pre></code></td></tr><tr><td>16</td><td><code><pre>        return &amp;bookService{</pre></code></td></tr><tr><td>17</td><td><code><pre>                store: dao.NewBookStore(db),</pre></code></td></tr><tr><td>18</td><td><code><pre>        }</pre></code></td></tr><tr><td>19</td><td><code><pre>}</pre></code></td></tr></table>
+
+<div class="funcname" id="fn_bookService.CreateBook">func bookService.CreateBook</div><div class="info"><a href="#s_fn_bookService.CreateBook">Back</a><p>In <code>/Users/chaoyuepan/go/src/github.com/smallnest/go_test_workshop/s6/book/service/book.go</code>:</p></div><table class="listing">
+<tr><td>25</td><td><code><pre>func (s *bookService) CreateBook(ctx context.Context, b *model.Book) error {</pre></code></td></tr><tr><td>26</td><td><code><pre>        return s.store.InsertBook(ctx, b)</pre></code></td></tr><tr><td>27</td><td><code><pre>}</pre></code></td></tr></table>
+
+<!-- Can be parsed by external script
+PACKAGE:github.com/smallnest/go_test_workshop/s6/book/service DONE:100.00
+-->
+
+<div id="summaryWrapper"><div class="package">Report Total</div>
+<div id="totalcov">78.12%</div>
+</div>
+    </body>

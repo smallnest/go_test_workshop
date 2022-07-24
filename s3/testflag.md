@@ -1,3 +1,0 @@
-
--  go test [build/test flags] [packages] [build/test flags & test binary flags]
-  - go test -gcflags="all=-l" ./...
