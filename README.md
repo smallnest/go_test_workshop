@@ -18,7 +18,36 @@ Go Test Workshop
 
 - s3: go test command
   - go help test
+    - go test [build/test flags] [packages] [build/test flags & test binary flags]
+    - local directory mode: cache disabled
+    - package list mode: cache enabled. `-count=1` to disable cache
+    - test binary flags
+      - -c:  Compile the test binary to pkg.test but do not run it
+      - -exec xprog
+      - -json: Convert test output to JSON suitable for automated processing.
+      - -o file:Compile the test binary to the named file.
+
   - go help testflag
+      - -count n: Run each test, benchmark, and fuzz seed n times (default 1).
+      - -cpu 1,2,4: Specify a list of GOMAXPROCS values for which the tests, benchmarks or fuzz tests should be executed.
+      - -failfast: Do not start new tests after the first test failure.
+      - -json
+      - -list regexp
+      - -parallel n
+      - -run regexp
+      - -short
+      - -shuffle off,on,N
+      - -timeout d
+      - -v
+      - -vet list
+
+
+  - go help testfunc
+    - func TestXxx(t *testing.T) { ... }
+    - func BenchmarkXxx(b *testing.B) { ... }
+    - func FuzzXxx(f *testing.F) { ... }
+    - func ExamplePrintln() { ... }
+
   - https://pkg.go.dev/testing
 
 - s4: coverage
@@ -36,11 +65,20 @@ Go Test Workshop
 - gocovery
 
 - s5: mock
+  - https://github.com/golang/mock
+  - https://github.com/vektra/mockery
+  - https://github.com/DATA-DOG/go-sqlmock
+  - https://github.com/h2non/gock
+  - https://github.com/gavv/httpexpect
 
-- s6: cases
+  - monky
+    - https://github.com/bouk/monkey
+    - https://github.com/agiledragon/gomonkey
+
+- s6: web case
+ - dao
+ - service
  - http
- - sql
- - integration test
 
 - s7: benchmark
 
