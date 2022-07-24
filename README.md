@@ -71,6 +71,10 @@ Go Test Workshop
   - https://github.com/DATA-DOG/go-sqlmock
   - https://github.com/h2non/gock
   - https://github.com/gavv/httpexpect
+  - https://github.com/steinfletcher/apitest
+  - https://github.com/carlmjohnson/be
+  - https://github.com/arikama/go-mysql-test-container
+  - https://github.com/jfilipczyk/gomatch
 
   - monkey
     - https://github.com/bouk/monkey
@@ -98,6 +102,5 @@ go install github.com/rakyll/gotest@master
 go install github.com/axw/gocov/gocov@latest
 go install github.com/matm/gocov-html@latest
 go install github.com/nikolaydubina/go-cover-treemap@latest
-go get github.com/smartystreets/goconvey/convey
-go get github.com/stretchr/testify
+// https://go-cover-treemap.io/
 ```
