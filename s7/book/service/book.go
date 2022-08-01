@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/smallnest/go_test_workshop/s6/book/dao"
-	"github.com/smallnest/go_test_workshop/s6/book/model"
+	"github.com/smallnest/go_test_workshop/s7/book/dao"
+	"github.com/smallnest/go_test_workshop/s7/book/model"
 )
 
 type BookService interface {

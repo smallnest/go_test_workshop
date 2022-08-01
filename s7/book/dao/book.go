@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/smallnest/go_test_workshop/s6/book/model"
+	"github.com/smallnest/go_test_workshop/s7/book/model"
 )
 
 type BookStore interface {

@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/smallnest/go_test_workshop/s6/book/model"
-	"github.com/smallnest/go_test_workshop/s6/book/util"
+	"github.com/smallnest/go_test_workshop/s7/book/model"
+	"github.com/smallnest/go_test_workshop/s7/book/util"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

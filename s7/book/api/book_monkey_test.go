@@ -11,8 +11,8 @@ import (
 	"testing"
 
 	"github.com/agiledragon/gomonkey/v2"
-	"github.com/smallnest/go_test_workshop/s6/book/model"
-	"github.com/smallnest/go_test_workshop/s6/book/service"
+	"github.com/smallnest/go_test_workshop/s7/book/model"
+	"github.com/smallnest/go_test_workshop/s7/book/service"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
