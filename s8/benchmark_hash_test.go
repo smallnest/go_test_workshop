@@ -26,7 +26,7 @@ import (
 var n int64
 var testBytes []byte
 
-func benchmarkHash(b *testing.B) {
+func BenchmarkHash(b *testing.B) {
 	sizes := []int64{32, 64, 128, 256, 512, 1024}
 	for _, n = range sizes {
 		testBytes = make([]byte, n)

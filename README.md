@@ -1,6 +1,15 @@
 # go_test_workshop
-Go Test Workshop
 
+如何编写健壮的代码？测试或者单元测试是一个非常有效的手段。自1997年JUint的出世引领单元测试以来，单元测试曾经风靡一时。然后在最近的十年，或者说在最近的几年，互联网企业面临巨大的竞争压力，或者说代码规范不收重视的情况下，糙快猛的编程方式也收到吹捧，以至于单元测试没有收到足够的重视，因此留下来很多的技术债务和线上风险，也就是俗称的"雷"。
+
+这个实战课程，全面介绍Go语言的单元测试的知识，通过大量的实战的代码，带你领略go test的便捷和强大，解答你在实际开发中的众多的疑惑，你在以后的Go应用程序的开发中，可以应用本文介绍的知识，把单元测试威力实际发挥出来。
+
+如果你会写`func TestXXX(t *testing.T) {`这一行代码，恭喜你，你已经知道了Go的一半的单元测试的知识，你可以重点关注其它的一半的Go单元测试的知识。如果你还未写过Go的单元测试，没关系，本门课程手把手教你怎么轻轻松松编写Go的单元测试。
+
+
+本课程的代码放在了 [Go Test Workshop](https://github.com/smallnest/go_test_workshop)
+
+![](/s0/bfe.svg)
 
 - s1: go test basic
   - [table driven tests ](https://github.com/golang/go/wiki/TableDrivenTests)
@@ -8,13 +17,13 @@ Go Test Workshop
     - gotest -v ./...
 
 - s2: testing.T
-  - testing.TB interface
-  - testing.T
-    - Fail/FailNow/Failed/Fatal/Fatalf
-    - Log/Logf/Error/Errorf
-    - Skip/SkipNow/Skipf/Skipped
-    - Helper
-    - Parallel
+    - testing.TB interface
+    - testing.T
+      - Fail/FailNow/Failed/Fatal/Fatalf
+      - Log/Logf/Error/Errorf
+      - Skip/SkipNow/Skipf/Skipped
+      - Helper
+      - Parallel
 
 
 - s3: go test command
