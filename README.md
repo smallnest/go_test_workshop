@@ -90,6 +90,8 @@
     - https://github.com/agiledragon/gomonkey
       - printf '\x07' | dd of=api.test bs=1 seek=160 count=1 conv=notrunc
       - https://github.com/eisenxp/macos-golink-wrapper
+  - container
+    - https://github.com/testcontainers/testcontainers-go
 
 - s7: web case
  - dao
