@@ -4,7 +4,7 @@ package s1
 
 import "testing"
 
-func Test_greet(t *testing.T) {
+func TestGreet(t *testing.T) {
 	s := greet("test")
 
 	if s != "hello test" {
