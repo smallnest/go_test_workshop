@@ -1,31 +1,44 @@
 package s2
 
-import (
-	"net"
-	"testing"
-)
+import "testing"
 
-func testConn(t *testing.T) net.Listener {
-	t.Helper()
-	// ln, err := net.Listen("tcp", "1.2.3.4:0")
-	ln, err := net.Listen("tcp", "127.0.0.1:0")
-	if err != nil {
-		t.Fatalf("err: %s", err)
-	}
-	return ln
+func notHelper(t *testing.T, msg string) {
+	t.Error(msg)
 }
 
-func TestDial(t *testing.T) {
-	ln := testConn(t)
-	defer ln.Close()
+func helper(t *testing.T, msg string) {
+	t.Helper()
+	t.Error(msg)
+}
 
-	conn, err := net.Dial("tcp", ln.Addr().String())
-	if err != nil {
-		t.Fatalf("want dial success but get %v", err)
-	}
+func notHelperCallingHelper(t *testing.T, msg string) {
+	helper(t, msg)
+}
 
-	err = conn.Close()
-	if err != nil {
-		t.Fatalf("want close success but get %v", err)
+func helperCallingHelper(t *testing.T, msg string) {
+	t.Helper()
+	helper(t, msg)
+}
+
+func TestHelper(t *testing.T) {
+	notHelper(t, "0")
+	helper(t, "1")
+	notHelperCallingHelper(t, "2")
+	helperCallingHelper(t, "3")
+
+	fn := func(msg string) {
+		t.Helper()
+		t.Error(msg)
 	}
+	fn("4")
+
+	t.Helper()
+	t.Error("5")
+
+	t.Run("sub", func(t *testing.T) {
+		helper(t, "6")
+		notHelperCallingHelper(t, "7")
+		t.Helper()
+		t.Error("8")
+	})
 }

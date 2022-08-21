@@ -10,5 +10,9 @@ func TestSkip(t *testing.T) {
 		t.Skip("skip MacOS")
 	}
 
+	if testing.Short() {
+		t.Skip("skip because of short")
+	}
+
 	t.Log("there a non-skipped log")
 }

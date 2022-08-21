@@ -26,6 +26,13 @@ func TestAdd(t *testing.T) {
 	}
 }
 
+func TestAdd2(t *testing.T) {
+	v := Add(1, 2)
+	if v != 3 {
+		t.Errorf("expect 3 but got %d", v)
+	}
+}
+
 func TestSub(t *testing.T) {
 	type args struct {
 		a int

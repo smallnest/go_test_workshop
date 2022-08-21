@@ -14,8 +14,10 @@ func TestParallel(t *testing.T) {
 
 			t.Logf("start to get %s", v)
 			resp, err := http.Get(v)
+			t.Logf("end to get %s", v)
 			if err != nil {
-				t.Fatalf("failed to get %s: %v", v, err)
+				t.Errorf("failed to get %s: %v", v, err)
+				return
 			}
 
 			resp.Body.Close()
