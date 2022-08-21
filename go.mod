@@ -3,6 +3,8 @@ module github.com/smallnest/go_test_workshop
 go 1.18
 
 require (
+	bou.ke/monkey v1.0.2
+	github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/agiledragon/gomonkey v2.0.2+incompatible
 	github.com/agiledragon/gomonkey/v2 v2.8.0
 	github.com/cespare/xxhash v1.1.0

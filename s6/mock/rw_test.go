@@ -1,4 +1,4 @@
-package mock
+package mock_io
 
 import (
 	"testing"
@@ -26,3 +26,6 @@ func TestReader(t *testing.T) {
 	assert.Equal(t, "abcdefghij", string(data[:n]))
 
 }
+
+
+
