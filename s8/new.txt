@@ -1,0 +1,12 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/smallnest/go_test_workshop/s8
+cpu: VirtualApple @ 2.50GHz
+BenchmarkExample
+BenchmarkExample-8   	 7060740	       169.0 ns/op	       8 B/op	       1 allocs/op
+BenchmarkExample-8   	 7102920	       169.2 ns/op	       8 B/op	       1 allocs/op
+BenchmarkExample-8   	 7144312	       168.8 ns/op	       8 B/op	       1 allocs/op
+BenchmarkExample-8   	 7112400	       170.2 ns/op	       8 B/op	       1 allocs/op
+BenchmarkExample-8   	 7047000	       172.0 ns/op	       8 B/op	       1 allocs/op
+PASS
+ok  	github.com/smallnest/go_test_workshop/s8	9.350s

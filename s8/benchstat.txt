@@ -1,0 +1,8 @@
+name       old time/op    new time/op    delta
+Example-8    3.60µs ± 0%    0.17µs ± 1%  -95.29%  (p=0.008 n=5+5)
+
+name       old alloc/op   new alloc/op   delta
+Example-8     32.0B ± 0%      8.0B ± 0%  -75.00%  (p=0.008 n=5+5)
+
+name       old allocs/op  new allocs/op  delta
+Example-8      1.00 ± 0%      1.00 ± 0%     ~     (all equal)

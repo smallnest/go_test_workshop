@@ -11,7 +11,7 @@ import (
 func TestPrintln(t *testing.T) {
 	patches := gomonkey.ApplyFunc(fmt.Println, func(a ...any) (n int, err error) {
 
-		return fmt.Fprintln(os.Stdout, " I have changed the arguments")
+		return fmt.Fprintln(os.Stdout, "I have changed the arguments")
 	})
 	defer patches.Reset()
 
