@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package s2
 
 import (
