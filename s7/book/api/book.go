@@ -16,13 +16,13 @@ type BookController struct {
 
 func (bc *BookController) CreateBook(w http.ResponseWriter, r *http.Request) {
 	title := r.FormValue("title")
-	autherID := r.FormValue("autherID")
+	authorID := r.FormValue("authorID")
 	isbn := r.FormValue("isbn")
 	computers := r.FormValue("subject")
 
-	aid, err := strconv.Atoi(autherID)
+	aid, err := strconv.Atoi(authorID)
 	if err != nil {
-		http.Error(w, "wrong auther id", http.StatusBadRequest)
+		http.Error(w, "wrong author id", http.StatusBadRequest)
 		return
 	}
 
