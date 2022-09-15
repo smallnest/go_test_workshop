@@ -25,7 +25,7 @@ func TestBookController_GetBook(t *testing.T) {
 
 	data := url.Values{}
 	data.Set("title", "The Go Programming Language")
-	data.Set("autherID", "1")
+	data.Set("authorID", "1")
 	data.Set("isbn", "978-0134190440")
 	data.Set("subject", "computers")
 
