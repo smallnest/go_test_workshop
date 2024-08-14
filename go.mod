@@ -1,12 +1,10 @@
 module github.com/smallnest/go_test_workshop
 
-go 1.18
+go 1.22
 
 require (
-	bou.ke/monkey v1.0.2
 	github.com/DATA-DOG/go-sqlmock v1.5.0
-	github.com/agiledragon/gomonkey v2.0.2+incompatible
-	github.com/agiledragon/gomonkey/v2 v2.8.0
+	github.com/agiledragon/gomonkey/v2 v2.11.0
 	github.com/cespare/xxhash v1.1.0
 	github.com/creachadair/cityhash v0.1.1
 	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13
@@ -15,14 +13,14 @@ require (
 	github.com/golang/mock v1.6.0
 	github.com/google/uuid v1.3.0
 	github.com/leemcloughlin/gofarmhash v0.0.0-20160919192320-0a055c5b87a8
-	github.com/mattn/go-sqlite3 v1.14.14
+	github.com/mattn/go-sqlite3 v1.14.22
 	github.com/minio/highwayhash v1.0.2
 	github.com/orlangure/gnomock v0.21.1-0.20220731072318-def3e4eb83fa
 	github.com/pierrec/xxHash v0.1.5
 	github.com/segmentio/kafka-go v0.4.33
 	github.com/smartystreets/goconvey v1.6.4
 	github.com/spaolacci/murmur3 v1.1.0
-	github.com/stretchr/testify v1.8.0
+	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.13.0
 )
 
@@ -30,6 +28,7 @@ require (
 	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Microsoft/hcsshim v0.8.23 // indirect
+	github.com/bytedance/mockey v1.2.10 // indirect
 	github.com/cenkalti/backoff/v4 v4.1.2 // indirect
 	github.com/containerd/cgroups v1.0.1 // indirect
 	github.com/containerd/containerd v1.5.9 // indirect
@@ -63,6 +62,7 @@ require (
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
 	go.uber.org/zap v1.22.0 // indirect
+	golang.org/x/arch v0.0.0-20201008161808-52c3e6f60cff // indirect
 	golang.org/x/net v0.0.0-20220811182439-13a9a731de15 // indirect
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // indirect
 	golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab // indirect
